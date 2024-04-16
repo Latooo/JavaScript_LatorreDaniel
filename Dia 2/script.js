@@ -1,3 +1,4 @@
+
 function menuPrincipal() {
     console.log("\n--- Menú Principal ---");
     console.log("1. Iniciar Sesión como Coordinador");
@@ -7,5 +8,9 @@ function menuPrincipal() {
     console.log("5. Salir del programa");
 }
 
-// Ejemplo de uso
-menuPrincipal();
+menuPrincipal()
+
+
+let respuesta = prompt("Elige la opcion 1 a 5")
+
+
