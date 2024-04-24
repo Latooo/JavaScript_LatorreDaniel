@@ -1,4 +1,4 @@
-function fetchCaratersWars(){
+function fetchStarWars(){
     let xhr = new XMLHttpRequest();
     let starID = document.getElementById('caracterId').value;
     console.log(starID);
@@ -19,7 +19,6 @@ function fetchCaratersWars(){
     };
     xhr.send();
 }
-
 function DisplayGeneralInfo(data){
     let generalInfo = document.getElementById("GeneralInf");
     
@@ -40,7 +39,6 @@ function DisplayGeneralInfo(data){
         `
     };
 }
-
 function DisplayHomeworldInfo(data) {   
     let homeworldInfo = document.getElementById("HomeworldInf");
 
@@ -59,7 +57,6 @@ function DisplayHomeworldInfo(data) {
             })
     }
 }
-
 function DisplayFilmsInfo(data) {
     let filmInfo = document.getElementById("FilmsInf");
 
@@ -87,11 +84,6 @@ function DisplayFilmsInfo(data) {
 
     }
 }
-
-
-
-
-
 function DisplayExtraInfo(data) {
     let extraInfo = document.getElementById('ExtraInf');
     if (data.response === "error") {
@@ -106,8 +98,3 @@ function DisplayExtraInfo(data) {
         `
     };
 }
-
-
-// https://swapi.py4e.com/api/
-
-// https://swapi.py4e.com/api/people/
