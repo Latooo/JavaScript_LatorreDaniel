@@ -35,7 +35,6 @@ function DisplayGeneralInfo(data){
         <p>Color de ojos: ${data.eye_color}</p>
         <p>Fecha de nacimiento: ${data.birth_year}</p>
         <p>Genero: ${data.gender}</p>
-
         `
     };
 }
@@ -57,33 +56,6 @@ function DisplayHomeworldInfo(data) {
             })
     }
 }
-function DisplayFilmsInfo(data) {
-    let filmInfo = document.getElementById("FilmsInf");
-
-    if (data.response === "error") {
-        filmInfo.innerHTML = `<p>Error: ${data.error}</p>`;
-    } else {
-        let filmsList = data.films.map(function(url) {
-            return fetch(url)
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(filmData) {
-                    return filmData.title;
-                });
-        });
-
-        Promise.all(filmsList)
-            .then(function(films) {
-                let filmsHtml = "";
-                for (let i = 0; i < films.length; i++) {
-                    filmsHtml += `<p> ${films[i]} </p>`;
-                }
-                filmInfo.innerHTML = `<p><b>Películas:</b></p>${filmsHtml}`;
-            })
-
-    }
-}
 function DisplayExtraInfo(data) {
     let extraInfo = document.getElementById('ExtraInf');
     if (data.response === "error") {
@@ -94,7 +66,6 @@ function DisplayExtraInfo(data) {
         <p>Creado: ${data.created}</p>
         <p>Editado: ${data.edited}</p>
         <p>Url: ${data.url}</p>
-
         `
     };
 }
