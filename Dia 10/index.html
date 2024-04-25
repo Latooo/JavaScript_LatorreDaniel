@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Wars Characters</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/Dia 10/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mt-4 text-center">STAR WARS</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mt-4">Personajes de Star Wars</h2>
+            <div class="form-group mt-4">
+                <label for="charId">Ingresa el ID del personaje (1-88):</label>
+                <input type="number" class="form-control" id="charId" min="1" max="88">
+            </div>
+            <button class="btn btn-primary" onclick="getCharacter()">Obtener Personaje</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div id="characterInfo" class="mt-4"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/Dia 10/script.js"></script>
+
+</body>
+</html>

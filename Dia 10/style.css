@@ -1,0 +1,15 @@
+body {
+    background-color: #000;
+    background-image: url('https://i.imgur.com/4spjSsN.jpg');
+    background-size: cover;
+    color: #fff;
+}
+.table {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+}
+h1 {
+    color: yellow; 
+    text-align: center;
+    margin-top: 50px;
+}
