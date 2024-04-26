@@ -1,6 +1,6 @@
 function getCharacter() {
-    var charId = document.getElementById("charId").value;
-    var url = `https://swapi.py4e.com/api/people/${charId}/`;
+    charId = document.getElementById("charId").value;
+    url = `https://swapi.py4e.com/api/people/${charId}/`;
 
     fetch(url)
     .then(response => response.json())
@@ -18,7 +18,7 @@ function getCharacter() {
 }
 
 function getAdditionalInfo(character) {
-    var promises = [];
+    promises = [];
 
     promises.push(fetch(character.homeworld).then(response => response.json()).then(data => {
         character.homeworld = data;
