@@ -68,7 +68,7 @@ function checkGuess(guess) {
 
 function getValue(card) {
   if (typeof card === "string") {
-    var valueStr = card.split(" ")[0]; // Tomar la primera parte de la cadena
+    var valueStr = card.split(" ")[0]; 
     switch (valueStr) {
       case "ACE": return 1;
       case "KING":
@@ -77,5 +77,5 @@ function getValue(card) {
       default: return parseInt(valueStr);
     }
   }
-  return 0; // Valor predeterminado si no se puede obtener el valor de la carta
+  return 0;
 }
