@@ -1,9 +1,9 @@
-var API_URL = "https://deckofcardsapi.com/api/deck";
-var deckId = "";
-var currentCard = $("#current-card");
-var resultDisplay = $("#result");
-var streakDisplay = $("#streak");
-var streakCounter = 0;
+ API_URL = "https://deckofcardsapi.com/api/deck";
+ deckId = "";
+ currentCard = $("#current-card");
+ resultDisplay = $("#result");
+ streakDisplay = $("#streak");
+ streakCounter = 0;
 
 $(document).ready(function() {
   $("#higher-btn").click(function() { checkGuess("higher"); });
@@ -43,9 +43,9 @@ function displayCard(card) {
 function checkGuess(guess) {
   $.get(API_URL + "/" + deckId + "/draw/?count=1", function(response){
     if (response.cards.length === 1) {
-      var currentCardValue = getValue(currentCard.attr("alt"));
-      var nextCardValue = getValue(response.cards[0].value);
-      var result;
+       currentCardValue = getValue(currentCard.attr("alt"));
+       nextCardValue = getValue(response.cards[0].value);
+       result;
       if ((guess === "higher" && nextCardValue > currentCardValue) || 
           (guess === "lower" && nextCardValue < currentCardValue)) {
         result = "¡Adivinaste correctamente!";
@@ -68,7 +68,7 @@ function checkGuess(guess) {
 
 function getValue(card) {
   if (typeof card === "string") {
-    var valueStr = card.split(" ")[0]; 
+     valueStr = card.split(" ")[0]; 
     switch (valueStr) {
       case "ACE": return 1;
       case "KING":
