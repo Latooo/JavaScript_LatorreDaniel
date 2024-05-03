@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Dia 13/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <form id="miForm">
+        <fieldset id="obligatorio">
+            <h1>Mis Heroes</h1>
+          <legend>Gestion de Heroes</legend>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre de personaje</label>
+            <input type="text" name="nombre" class="form-control">
+          </div>
+          <div class="mb-4">
+            <label for="actor" class="form-label">Nombre de actor</label>
+            <input type="text" name="actor" class="form-control">
+          </div>
+          <div class="mb-5">
+            <label for="edad" class="form-label">Edad Actor</label>
+            <input type="text" name="edad" class="form-control">
+          </div>
+          <div class="mb-6">
+            <label for="ubicacion" class="form-label">Ubicacion</label>
+            <input type="text" name="ubicacion" class="form-control">
+            <p style="color: gray;">Nombre de la ciudad de origen</p>
+          </div>
+          <div class="mb-7">
+            <label for="poster" class="form-label">Poster</label>
+            <input type="text" name="poster" class="form-control">
+          </div>
+          <div class="mb-8">
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="date" name="fecha" class="form-control" min="1999-01-01" max="2024-12-31">
+          </div>
+          <div class="mb-9">
+            <label for="productora" class="form-label">Productora</label>
+            <select name="productora" class="form-select">
+              <option>Marvel</option>
+              <option>DComics</option>
+            </select>
+          </div>
+          <h1>Registro de trajes</h1>
+            <h2>Trajes del personaje</h2>
+            <p>En esta seccion podra registrar los nombres de los trajes usados por el actor en cada una de sus pelicula.</p>
+            <button type="submit" class="btn btn-primary2" style="background-color: rgb(255, 187, 0); color: rgb(0, 0, 0);">+</button>
+            <br>
+            <br>    
+        </fieldset>
+          <button type="submit" id="activar" class="btn btn-primary2" style="background-color: black; color: white;">Nuevo Heroe</button>
+          <button type="submit" class="btn btn-primary">Guardar Heroe</button>
+          <button type="submit" class="btn btn-primary4" style="background-color: green; color: white;">Actualizar Heroe</button>
+          <button type="submit" class="btn btn-primary5" style="background-color: rgb(225, 0, 255); color: white;">Eliminar Heroe</button>
+          <button type="reset" class="btn btn-primary3" style="background-color: red; color: white;">Cancelar</button>
+      </form>
+
+</body>
+<script src="/Dia 13/script.js"></script>
+</html>
