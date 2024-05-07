@@ -20,17 +20,17 @@ fetch(url)
     img.src = author.picture.medium;
     span.innerHTML = 
     `
-    <p> Hi, My name is </p>
+    <h2> Hi, My name is </h2>
     <p>${author.name.first} ${author.name.last}</p> 
-    <p> My email address is </p>
+    <h2> My email address is </h2>
     <p>${author.email}</p>
-    <p> My birthday is </p>
+    <h2> My birthday is </h2>
     <p>${author.dob.date}</p>
-    <p> My address is </p>
+    <h2> My address is </h2>
     <p>${author.location.street.number} ${author.location.street.name}</p> 
-    <p> My phone number is </p>
+    <h2> My phone number is </h2>
     <p>${author.phone}</p>
-    <p> My password is </p>
+    <h2> My password is </h2>
     <p>${author.login.password}</p>
     `
     ;

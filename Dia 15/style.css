@@ -1,5 +1,13 @@
-
 #btns{
     height: 30px;
     width: 200px;
+}
+img
+{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.card{
+    width: 40vw;
 }
