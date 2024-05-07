@@ -4,10 +4,12 @@
 }
 img
 {
+    margin-top: 20px;
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
 .card{
+    margin-top: 60px;
     width: 40vw;
 }
