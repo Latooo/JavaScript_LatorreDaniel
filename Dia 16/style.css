@@ -1,0 +1,35 @@
+img
+{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.card{
+    margin-top: 60px;
+    width: 40vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card2{
+    width: 40vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contenedor {
+    width: 40vw;
+}
+#email, #birthday, #address, #phone, #password {
+    display: none;
+}
+.a{
+    border: 1px solid gray;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    left: 16.5vw;
+    top: 1.5vh;
+
+}
+.btn-group{
+    margin-bottom: 20px;
+}
