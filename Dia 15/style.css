@@ -13,3 +13,10 @@ img
     margin-top: 60px;
     width: 40vw;
 }
+
+.contenedor {
+    width: 40vw;
+}
+#email, #birthday, #address, #phone, #password {
+    display: none;
+}
